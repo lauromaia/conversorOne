@@ -8,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Scene2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Scene2Controller">
    <children>
       <Label layoutX="14.0" layoutY="8.0" text="Conversor de Moedas" textAlignment="CENTER">
          <font>
@@ -21,27 +20,38 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <ChoiceBox layoutX="14.0" layoutY="97.0" prefHeight="25.0" prefWidth="361.0" />
-      <TextField layoutX="195.0" layoutY="134.0" prefHeight="25.0" prefWidth="123.0" />
-      <Text layoutX="165.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" wrappingWidth="20.13671875">
+      <ChoiceBox fx:id="moedaOriginal" layoutX="37.0" layoutY="125.0" onMouseClicked="#getMoedaOriginal" prefHeight="25.0" prefWidth="110.0" />
+      <TextField layoutX="226.0" layoutY="176.0" prefHeight="25.0" prefWidth="123.0" />
+      <Text layoutX="196.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" wrappingWidth="20.13671875">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="55.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o valor:" wrappingWidth="110.255859375">
+      <Text layoutX="86.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o valor:" wrappingWidth="110.255859375">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Button layoutX="92.0" layoutY="178.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="93.0" text="Voltar" textAlignment="CENTER">
+      <Button layoutX="194.0" layoutY="227.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="81.0" text="Voltar" textAlignment="CENTER">
          <font>
-            <Font size="15.0" />
+            <Font size="13.0" />
          </font>
       </Button>
-      <Button layoutX="272.0" layoutY="178.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="93.0" text="Converter" textAlignment="CENTER">
+      <Button layoutX="285.0" layoutY="225.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Converter" textAlignment="CENTER">
          <font>
-            <Font size="15.0" />
+            <Font size="13.0" />
          </font>
       </Button>
+      <Text layoutX="37.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moeda do valor original:" wrappingWidth="165.255859375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="256.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moeda da conversão:" wrappingWidth="165.255859375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="moedaConversao" layoutX="256.0" layoutY="128.0" onMouseClicked="#getMoedaConversao" prefHeight="25.0" prefWidth="110.0" />
    </children>
 </AnchorPane>
