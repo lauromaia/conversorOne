@@ -20,9 +20,9 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="moedaOriginal" layoutX="37.0" layoutY="125.0" onMouseClicked="#getMoedaOriginal" prefHeight="25.0" prefWidth="110.0" />
-      <TextField layoutX="226.0" layoutY="176.0" prefHeight="25.0" prefWidth="123.0" />
-      <Text layoutX="196.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" wrappingWidth="20.13671875">
+      <ChoiceBox fx:id="moedaOriginal" layoutX="37.0" layoutY="125.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField layoutX="240.0" layoutY="176.0" prefHeight="25.0" prefWidth="137.0" />
+      <Text fx:id="textoCifra" layoutX="196.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" textAlignment="RIGHT" wrappingWidth="41.13671875">
          <font>
             <Font size="15.0" />
          </font>
@@ -52,6 +52,6 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <ChoiceBox fx:id="moedaConversao" layoutX="256.0" layoutY="128.0" onMouseClicked="#getMoedaConversao" prefHeight="25.0" prefWidth="110.0" />
+      <ChoiceBox fx:id="moedaConversao" layoutX="256.0" layoutY="128.0" prefHeight="25.0" prefWidth="110.0" />
    </children>
 </AnchorPane>
