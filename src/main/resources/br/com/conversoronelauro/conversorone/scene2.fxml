@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Scene2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers.Scene2Controller">
    <children>
       <Label layoutX="14.0" layoutY="8.0" text="Conversor de Moedas" textAlignment="CENTER">
          <font>
@@ -21,7 +21,7 @@
          </font>
       </Text>
       <ChoiceBox fx:id="moedaOriginal" layoutX="37.0" layoutY="125.0" prefHeight="25.0" prefWidth="110.0" />
-      <TextField layoutX="240.0" layoutY="176.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="textValor" layoutX="240.0" layoutY="176.0" prefHeight="25.0" prefWidth="137.0" />
       <Text fx:id="textoCifra" layoutX="196.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" textAlignment="RIGHT" wrappingWidth="41.13671875">
          <font>
             <Font size="15.0" />
@@ -37,16 +37,16 @@
             <Font size="13.0" />
          </font>
       </Button>
-      <Button layoutX="285.0" layoutY="225.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Converter" textAlignment="CENTER">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Button>
       <Text layoutX="37.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moeda do valor original:" wrappingWidth="165.255859375">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
+      <Button fx:id="botaoConverter" layoutX="285.0" layoutY="225.0" mnemonicParsing="false" onAction="#converter" prefHeight="31.0" prefWidth="81.0" text="Converter" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
       <Text layoutX="256.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moeda da conversão:" wrappingWidth="165.255859375">
          <font>
             <Font size="14.0" />

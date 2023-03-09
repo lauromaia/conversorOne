@@ -3,14 +3,14 @@ package br.com.conversoronelauro.conversorone.ConversorMoeda;
 import java.util.HashMap;
 
 public enum Moedas {
-    REAL("Real", "R$"), DOLAR("Dólar", "US$"), PESO_ARG("Peso Argentino", "$"),
-    PESO_CHILENO("Peso Chileno", "CLP$"), LIBRA("Libras Esterlinas", "£");
+    BRL("Real", "R$"), USD("Dólar", "US$"), ARS("Peso Argentino", "$"),
+    CLP("Peso Chileno", "CLP$"), GBP("Libras Esterlinas", "£");
 
     public final String nome;
     public final String cifra;
     public static final HashMap<String, Moedas> MAPcifras = new HashMap<String, Moedas>();
     public static final HashMap<String, Moedas> MAPnome = new HashMap<String, Moedas>();
-    private Moedas(String label, String cifrao){
+    Moedas(String label, String cifrao){
         this.nome = label;
         this.cifra = cifrao;
     }
