@@ -47,8 +47,8 @@ public class CalculadoraMoedas {
             //Formatação do resultado e do valor original para a resposta
             var moedaResultado = Moedas.valueOf(moedaFinal);
             var moedaOriginal = Moedas.valueOf(moedaInicial);
-            String inicial = moedaOriginal.toString() + " " + moedaOriginal.getCifra() + valor;
-            String resultado = moedaResultado.toString() + " " + moedaResultado.getCifra() + valorResultado;
+            String inicial = moedaOriginal.getCifra() + valor;
+            String resultado = moedaResultado.getCifra() + valorResultado;
 
             return inicial + " equivale a: " + resultado;
         }

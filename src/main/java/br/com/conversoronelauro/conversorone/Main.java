@@ -12,6 +12,7 @@ public class Main extends javafx.application.Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("scene1.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
+        stage.setTitle("Conversor One");
         stage.show();
     }
 

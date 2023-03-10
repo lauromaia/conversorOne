@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" prefHeight="259.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers.Scene3Controller">
+   <children>
+      <Label layoutX="252.0" layoutY="14.0" prefHeight="32.0" prefWidth="105.0" text="Resultado:" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="textoResultado" layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD U$1.00 equivale a BRL R$ 23,00" textAlignment="CENTER" wrappingWidth="558.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="197.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deseja fazer outra conversão?" textAlignment="CENTER" wrappingWidth="214.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="botaoFinalizaPrograma" layoutX="186.0" layoutY="195.0" mnemonicParsing="false" onAction="#fechaPrograma" prefHeight="39.0" prefWidth="87.0" text="Não" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoNovaConversao" layoutX="351.0" layoutY="195.0" mnemonicParsing="false" onAction="#voltaSceneAnterior" prefHeight="39.0" prefWidth="87.0" text="Sim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
