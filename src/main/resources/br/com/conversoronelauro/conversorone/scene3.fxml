@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="scenePane" prefHeight="259.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers.Scene3Controller">
+<AnchorPane fx:id="scenePane" prefHeight="259.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.Controllers.Scene3Controller">
    <children>
       <Label layoutX="252.0" layoutY="14.0" prefHeight="32.0" prefWidth="105.0" text="Resultado:" textAlignment="CENTER">
          <font>

@@ -1,4 +1,4 @@
-package br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers;
+package br.com.conversoronelauro.conversorone.Controllers;
 
 import br.com.conversoronelauro.conversorone.ConversorMoeda.CalculadoraMoedas;
 import br.com.conversoronelauro.conversorone.ConversorMoeda.Moedas;

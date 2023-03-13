@@ -8,6 +8,6 @@ module br.com.conversoronelauro.conversorone {
     exports br.com.conversoronelauro.conversorone;
     exports br.com.conversoronelauro.conversorone.ConversorMoeda;
     opens br.com.conversoronelauro.conversorone.ConversorMoeda to javafx.fxml;
-    exports br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers;
-    opens br.com.conversoronelauro.conversorone.ConversorMoeda.Controllers to javafx.fxml;
+    exports br.com.conversoronelauro.conversorone.Controllers;
+    opens br.com.conversoronelauro.conversorone.Controllers to javafx.fxml;
 }
