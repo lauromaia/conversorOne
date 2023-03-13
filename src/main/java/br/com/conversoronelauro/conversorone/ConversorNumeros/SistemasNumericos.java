@@ -1,15 +1,25 @@
 package br.com.conversoronelauro.conversorone.ConversorNumeros;
 
+import java.util.HashMap;
+
 public enum SistemasNumericos {
     DECIMAL("Decimal"), HEXADECIMAL("Hexadecimal"), OCTAL("Octal"), BINARIO("Binário");
 
-    private String label;
+    public static final HashMap<String, SistemasNumericos> MAPnome = new HashMap<String, SistemasNumericos>();
+    private String nome;
 
     SistemasNumericos(String label) {
-        this.label = label;
+        this.nome = label;
     }
 
-    public String getLabel(){
-        return this.label;
+    public String getNome() {
+        return this.nome;
+    }
+
+    static {
+        for (SistemasNumericos field : SistemasNumericos.values()) {
+            MAPnome.put(field.getNome(), field);
+        }
     }
 }
+

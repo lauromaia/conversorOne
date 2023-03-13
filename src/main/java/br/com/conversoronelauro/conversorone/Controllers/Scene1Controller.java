@@ -31,23 +31,27 @@ public class Scene1Controller implements Initializable {
 
 
     public void proximaScene(ActionEvent event) throws IOException {
+        //Checa qual opção de conversor na choicebox
         if(choiceBoxConversor.getValue() == "Conversor de Moedas") {
             pathNextScene = "/br/com/conversoronelauro/conversorone/scene2.fxml";
         } else if(choiceBoxConversor.getValue() == "Conversor de Sistemas Numéricos") {
                 pathNextScene = "/br/com/conversoronelauro/conversorone/sceneConversorNumerico.fxml";
             }
+        //Carrega próxima cena baseado na opção escolhida
             FXMLLoader loaderConversorMoedas = new FXMLLoader(getClass().getResource(pathNextScene));
             root = loaderConversorMoedas.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
-            stage.setTitle("Conversor de Moedas");
+            stage.setTitle(choiceBoxConversor.getValue());
             stage.show();
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //Popula a choicebox
         choiceBoxConversor.getItems().addAll(listaConversores);
+        choiceBoxConversor.setValue(listaConversores[0]);
     }
 
     @FXML

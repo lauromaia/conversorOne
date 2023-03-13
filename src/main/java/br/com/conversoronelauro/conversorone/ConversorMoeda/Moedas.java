@@ -10,8 +10,8 @@ public enum Moedas {
     public final String cifra;
     public static final HashMap<String, Moedas> MAPcifras = new HashMap<String, Moedas>();
     public static final HashMap<String, Moedas> MAPnome = new HashMap<String, Moedas>();
-    Moedas(String label, String cifrao){
-        this.nome = label;
+    Moedas(String nome, String cifrao){
+        this.nome = nome;
         this.cifra = cifrao;
     }
     public String getNome(){

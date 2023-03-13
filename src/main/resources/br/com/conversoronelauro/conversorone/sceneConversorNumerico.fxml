@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.Controllers.SceneConversorNumericoController">
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.conversoronelauro.conversorone.Controllers.SceneConversorNumericoController">
    <children>
       <Label layoutX="14.0" layoutY="8.0" text="Conversor Numérico" textAlignment="CENTER">
          <font>
@@ -21,43 +21,48 @@
          </font>
       </Text>
       <ChoiceBox fx:id="choiceBoxSistemaOriginal" layoutX="28.0" layoutY="102.0" prefHeight="25.0" prefWidth="110.0" />
-      <TextField fx:id="textValor" layoutX="255.0" layoutY="115.0" prefHeight="25.0" prefWidth="137.0" />
-      <Text layoutX="255.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o valor:" wrappingWidth="98.255859375">
+      <TextField fx:id="textoValor" layoutX="240.0" layoutY="101.0" onAction="#converter" prefHeight="25.0" prefWidth="137.0" />
+      <Text layoutX="240.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o valor:" wrappingWidth="98.255859375">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Button layoutX="92.0" layoutY="227.0" mnemonicParsing="false" onAction="#chamaCena1" prefHeight="27.0" prefWidth="81.0" text="Voltar" textAlignment="CENTER">
+      <Button layoutX="83.0" layoutY="281.0" mnemonicParsing="false" onAction="#chamaCena1" prefHeight="27.0" prefWidth="110.0" text="Menu Principal" textAlignment="CENTER">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
       <Text layoutX="28.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Converter de:" wrappingWidth="91.255859375">
          <font>
-            <Font size="14.0" />
+            <Font size="15.0" />
          </font>
       </Text>
-      <Button layoutX="255.0" layoutY="225.0" mnemonicParsing="false" onAction="#converter" prefHeight="31.0" prefWidth="81.0" text="Converter" textAlignment="CENTER">
+      <Button layoutX="239.0" layoutY="144.0" mnemonicParsing="false" onAction="#converter" prefHeight="31.0" prefWidth="81.0" text="Converter" textAlignment="CENTER">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <Text layoutX="28.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para:" wrappingWidth="37.255859375">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <ChoiceBox fx:id="choiceBoxSistemaPara" layoutX="28.0" layoutY="178.0" prefHeight="25.0" prefWidth="110.0" />
-      <Button layoutX="146.0" layoutY="137.0" mnemonicParsing="false" onAction="#inverteSelecao" prefHeight="31.0" prefWidth="71.0" text="Trocar">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Text layoutX="255.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:" wrappingWidth="98.255859375">
+      <Text layoutX="38.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para:" wrappingWidth="37.255859375">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="textoResultado" layoutX="255.0" layoutY="178.0" prefHeight="25.0" prefWidth="137.0" />
+      <ChoiceBox fx:id="choiceBoxSistemaPara" layoutX="38.0" layoutY="208.0" prefHeight="25.0" prefWidth="110.0" />
+      <Button layoutX="93.0" layoutY="144.0" mnemonicParsing="false" onAction="#inverteSelecao" prefHeight="31.0" prefWidth="71.0" text="Inverter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="242.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:" wrappingWidth="98.255859375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textoResultado" layoutX="242.0" layoutY="206.0" prefHeight="25.0" prefWidth="137.0" />
+      <Button layoutX="241.0" layoutY="281.0" mnemonicParsing="false" onAction="#fechaPrograma" prefHeight="27.0" prefWidth="110.0" text="Fechar" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

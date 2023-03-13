@@ -3,6 +3,8 @@ package br.com.conversoronelauro.conversorone.ConversorNumeros;
 import static br.com.conversoronelauro.conversorone.ConversorNumeros.SistemasNumericos.DECIMAL;
 
 public class CalculadoraSistemasNumericos {
+
+
     public static String calculaConversao(SistemasNumericos sistemaDe, SistemasNumericos sistemaPara, String valor){
         //Verifica se é uma conversão de decimal
         if(sistemaDe == DECIMAL){
@@ -38,14 +40,11 @@ public class CalculadoraSistemasNumericos {
     //Converte valores de decimal
     public static String calculaDeDecimal(SistemasNumericos sistemaPara, String valor){
         int valorInt = Integer.parseInt(valor);
-        switch (sistemaPara.toString()){
-            case("BINARIO"):
-                return Integer.toBinaryString(valorInt);
-            case("OCTAL"):
-                return Integer.toOctalString(valorInt);
-            case("HEXADECIMAL"):
-                return Integer.toHexString(valorInt);
-        }
-        return "Conversão incorreta";
+        return switch (sistemaPara.toString()) {
+            case ("BINARIO") -> Integer.toBinaryString(valorInt);
+            case ("OCTAL") -> Integer.toOctalString(valorInt);
+            case ("HEXADECIMAL") -> Integer.toHexString(valorInt);
+            default -> "Conversão incorreta";
+        };
     }
 }

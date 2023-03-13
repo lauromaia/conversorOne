@@ -99,7 +99,8 @@ public class Scene2Controller implements Initializable {
     private void chamaCenaError(ActionEvent event){
         Alert dialogoErro = new Alert(Alert.AlertType.ERROR);
         dialogoErro.setTitle("Erro");
-        dialogoErro.setHeaderText("Deve inserir um valor válido!");
+        dialogoErro.setHeaderText(null);
+        dialogoErro.setContentText("Deve inserir um valor válido!");
         dialogoErro.showAndWait();
     }
 
@@ -110,7 +111,7 @@ public class Scene2Controller implements Initializable {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Erro");
+        stage.setTitle("Conversor One");
         stage.show();
     }
 }

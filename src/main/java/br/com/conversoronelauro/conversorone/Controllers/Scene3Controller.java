@@ -39,12 +39,11 @@ public class Scene3Controller{
     void fechaPrograma(ActionEvent event) {
         Alert dialogoErro = new Alert(Alert.AlertType.ERROR);
         dialogoErro.setTitle("Message");
-        dialogoErro.setHeaderText("Programa Finalizado");
+        dialogoErro.setHeaderText(null);
+        dialogoErro.setContentText("Programa Finalizado");
         dialogoErro.showAndWait();
         stage = (Stage) scenePane.getScene().getWindow();
         stage.close();
-
-
     }
     public void mostraTextoResultado(String texto){
         textoResultado.setText(texto);
